@@ -12,6 +12,8 @@ namespace BoomBoomRoulette
 {
     public partial class MainMenu : Form
     {
+        //Specify The Name of the file
+        private string fileName = "saveFile.txt";
         public MainMenu()
         {
             InitializeComponent();
@@ -25,7 +27,16 @@ namespace BoomBoomRoulette
             MainG.Show();
             // Hides the main menu form
             this.Hide();
+            // Writes the users name to a file
+            writeNameToFile();
 
+
+        }
+
+        void writeNameToFile() 
+        {
+            File.WriteAllText(fileName, PlayerNameEntry.Text);
+        
         }
     }
 }

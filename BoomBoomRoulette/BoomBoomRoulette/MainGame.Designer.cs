@@ -54,6 +54,7 @@
             StartRoundBtn.TabIndex = 1;
             StartRoundBtn.Text = "Start Game";
             StartRoundBtn.UseVisualStyleBackColor = true;
+            StartRoundBtn.Click += StartRoundBtn_Click;
             // 
             // textBox1
             // 
