@@ -32,7 +32,7 @@ namespace BoomBoomRoulette
 
 
         }
-
+        // Function that writes the Players name to a file
         void writeNameToFile() 
         {
             File.WriteAllText(fileName, PlayerNameEntry.Text);
