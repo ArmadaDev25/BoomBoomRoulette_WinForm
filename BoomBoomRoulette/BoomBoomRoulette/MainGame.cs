@@ -36,11 +36,11 @@ namespace BoomBoomRoulette
                 int roundToLoad = generateRandomNumber(2);
                 if (roundToLoad == 0)
                 {
-                    ammoLoaded = ammoLoaded.Append("live").ToArray();
+                    ammoLoaded = ammoLoaded.Append("Live").ToArray();
                 }
                 else
                 {
-                    ammoLoaded = ammoLoaded.Append("live").ToArray();
+                    ammoLoaded = ammoLoaded.Append("Blank").ToArray();
 
                 }
 
@@ -59,27 +59,50 @@ namespace BoomBoomRoulette
 
         }
 
+        // Logic that happens when the player choses to fire the gun  
+        void fireGun()
+        {
+            if (ammoLoaded[0] == "Live")
+            {
+                EventsBox.Items.Add("Bang");
+
+
+            }
+            if (ammoLoaded[0] == "Blank")
+            {
+                EventsBox.Items.Add("Click");
+
+            }
+
+        }
+
+
+
         private void StartRoundBtn_Click(object sender, EventArgs e)
         {
             loadGun();
             showLoadedRounds();
         }
 
-        private void MainGame_Load(object sender, EventArgs e)
-        {
 
-        }
 
         // Player Clicks this button to set the target to themselves
         private void AimPlayerBtn_Click(object sender, EventArgs e)
         {
-
+            isPlayerTarget = true;
         }
 
         // Player Clicks this button to set the target to the AI
         private void AimAiBtn_Click(object sender, EventArgs e)
         {
+            isPlayerTarget = false;
+        }
 
+        // logic that happens when the player pushes the fire button
+        private void fireBtn_Click(object sender, EventArgs e)
+        {
+            fireGun();
+               
         }
     }
 }

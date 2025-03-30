@@ -38,6 +38,7 @@
             AimPlayerBtn = new Button();
             AimAiBtn = new Button();
             label3 = new Label();
+            fireBtn = new Button();
             SuspendLayout();
             // 
             // EventsBox
@@ -129,11 +130,22 @@
             label3.TabIndex = 10;
             label3.Text = "Choose Target";
             // 
+            // fireBtn
+            // 
+            fireBtn.Location = new Point(12, 284);
+            fireBtn.Name = "fireBtn";
+            fireBtn.Size = new Size(241, 70);
+            fireBtn.TabIndex = 11;
+            fireBtn.Text = "FIRE!!!";
+            fireBtn.UseVisualStyleBackColor = true;
+            fireBtn.Click += fireBtn_Click;
+            // 
             // MainGame
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1265, 635);
+            Controls.Add(fireBtn);
             Controls.Add(label3);
             Controls.Add(AimAiBtn);
             Controls.Add(AimPlayerBtn);
@@ -146,7 +158,6 @@
             Controls.Add(EventsBox);
             Name = "MainGame";
             Text = "Form1";
-            Load += MainGame_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -163,5 +174,6 @@
         private Button AimPlayerBtn;
         private Button AimAiBtn;
         private Label label3;
+        private Button fireBtn;
     }
 }
