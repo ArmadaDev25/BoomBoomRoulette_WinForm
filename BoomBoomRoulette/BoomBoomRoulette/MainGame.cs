@@ -12,6 +12,7 @@ namespace BoomBoomRoulette
         string[] ammoLoaded = [];
         int playerHealth = 0;
         int computerHealth = 0;
+        int RoundsToLoad = 5;
         // bool that store whether or not the player is the target
         // Only 2 possible choices to the target, one of which is the player. The other target is not the player. 
         bool isPlayerTarget = false;
@@ -29,7 +30,7 @@ namespace BoomBoomRoulette
         void loadGun()
         {
             // Loop that will load the gun by adding items to the ammoLoaded array
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < RoundsToLoad; i++)
             {
                 // Calls the generateRandomNumer function, and passes 2 into the function
                 // The function should return either a 0 or 1, thus determining if the shell loaded is considered "live or not"
@@ -62,12 +63,26 @@ namespace BoomBoomRoulette
         // Logic that happens when the player choses to fire the gun  
         void fireGun()
         {
+            // Logic for if the ammo was live
             if (ammoLoaded[0] == "Live")
             {
                 EventsBox.Items.Add("Bang");
 
+                // If the Player was selected as the target then the player takes damage
+                if (isPlayerTarget == true)
+                {
+                    EventsBox.Items.Add("You Take a Shotgun Blast");
+                    EventsBox.Items.Add("Lose 1 Health");
+                }
+                // If the AI was selected as the target, then the AI takes damage
+                else 
+                {
+                    EventsBox.Items.Add("Bang");
+                }
+
 
             }
+            // Logic for if the ammo was a blank
             if (ammoLoaded[0] == "Blank")
             {
                 EventsBox.Items.Add("Click");
