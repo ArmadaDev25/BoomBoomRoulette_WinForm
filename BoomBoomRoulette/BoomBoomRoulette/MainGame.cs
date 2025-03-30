@@ -8,6 +8,8 @@ namespace BoomBoomRoulette
         {
             InitializeComponent();
         }
+
+        // Variables
         // Array that stores what "ammo in loaded in the gun and in what order"
         string[] ammoLoaded = [];
         int playerHealth = 0;
@@ -18,6 +20,9 @@ namespace BoomBoomRoulette
         bool isPlayerTarget = false;
         //Specify The Name of the file
         private string fileName = "saveFile.txt";
+        // Stores the current index of the next "shell" to be fired in the AmmoLoaded array
+        int CurrentAmmoRound = 0;
+        
         // function that Generates a random number to be used throghtout the application
         int generateRandomNumber(int ranMax)
         {
@@ -65,8 +70,9 @@ namespace BoomBoomRoulette
         // Logic that happens when the player choses to fire the gun  
         void fireGun()
         {
+            // If statements to check whether or not the Round was a "live" or a "blank"
             // Logic for if the ammo was live
-            if (ammoLoaded[0] == "Live")
+            if (ammoLoaded[CurrentAmmoRound] == "Live")
             {
                 EventsBox.Items.Add("Bang");
 
@@ -90,6 +96,8 @@ namespace BoomBoomRoulette
                 EventsBox.Items.Add("Click");
 
             }
+            // Incriments the current ammo round
+            CurrentAmmoRound++;
 
         }
 
@@ -99,8 +107,7 @@ namespace BoomBoomRoulette
         {
             loadGun();
             showLoadedRounds();
-            // Changes the text of the label to the text within the file
-            lblPlayerNameOutput.Text = File.ReadAllText(fileName);
+            
         
         }
 
@@ -125,10 +132,24 @@ namespace BoomBoomRoulette
 
         }
 
+        // Actions that occur once the MainGame form loads
+        // Program should read data from saveFile.txt then display it in some way
         private void MainGame_Load(object sender, EventArgs e)
         {
-            // Changes the text of the label to the text within the file
-            lblPlayerNameOutput.Text = File.ReadAllText(fileName);
+            // Try/Catch Error handling to handle potential errors with the file read/write
+            try 
+            {
+                // Changes the text of the label to the text within the file
+                lblPlayerNameOutput.Text = File.ReadAllText(fileName);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+
+            
         }
 
    

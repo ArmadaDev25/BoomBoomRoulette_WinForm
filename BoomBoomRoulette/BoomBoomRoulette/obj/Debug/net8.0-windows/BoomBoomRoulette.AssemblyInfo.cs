@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BoomBoomRoulette")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d265fb7c24cd61a03a107e027effb8dc114f14e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e160903809f6da0e2b2eb052f499890d671b29e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("BoomBoomRoulette")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BoomBoomRoulette")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
