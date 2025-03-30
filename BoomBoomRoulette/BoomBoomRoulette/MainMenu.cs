@@ -35,7 +35,21 @@ namespace BoomBoomRoulette
         // Function that writes the Players name to a file
         void writeNameToFile() 
         {
-            File.WriteAllText(fileName, PlayerNameEntry.Text);
+            // Error handling implmented for the write to a file function
+            // Attempts to write to a file, with throw error if the program runs into an issue
+            try
+            {
+                File.WriteAllText(fileName, PlayerNameEntry.Text);
+
+            }
+            // If an error occurs when creating the file, a messagebox will show
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            
+            }
+
+            
         
         }
     }
