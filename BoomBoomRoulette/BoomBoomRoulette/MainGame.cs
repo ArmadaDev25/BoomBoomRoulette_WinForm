@@ -12,7 +12,9 @@ namespace BoomBoomRoulette
         string[] ammoLoaded = [];
         int playerHealth = 0;
         int computerHealth = 0;
-
+        // bool that store whether or not the player is the target
+        // Only 2 possible choices to the target, one of which is the player. The other target is not the player. 
+        bool isPlayerTarget = false;
         // function that Generates a random number to be used throghtout the application
         int generateRandomNumber(int ranMax)
         {
@@ -44,13 +46,40 @@ namespace BoomBoomRoulette
 
             }
         }
+        // Displays the rounds loaded to the user
+        void showLoadedRounds()
+        {
+            // Adds the "Rounds Loaded" string to the textbox to denote to the user that these are the rounds loaded into the gun
+            EventsBox.Items.Add("Rounds Loaded");
+            // For loop that loops through each of the indexes within the ammoLoaded Array
+            for (int i = 0; i < ammoLoaded.Length; i++)
+            {
+                EventsBox.Items.Add(ammoLoaded[i]);
+            }
 
-        void showLoadedRounds() { }
+        }
 
         private void StartRoundBtn_Click(object sender, EventArgs e)
         {
             loadGun();
-            //EventsBox.Items.Add(ammoLoaded);
+            showLoadedRounds();
+        }
+
+        private void MainGame_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        // Player Clicks this button to set the target to themselves
+        private void AimPlayerBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // Player Clicks this button to set the target to the AI
+        private void AimAiBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

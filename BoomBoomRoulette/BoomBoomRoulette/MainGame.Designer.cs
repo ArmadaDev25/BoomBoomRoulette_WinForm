@@ -35,6 +35,9 @@
             GSTLabel = new Label();
             label1 = new Label();
             label2 = new Label();
+            AimPlayerBtn = new Button();
+            AimAiBtn = new Button();
+            label3 = new Label();
             SuspendLayout();
             // 
             // EventsBox
@@ -97,11 +100,43 @@
             label2.TabIndex = 6;
             label2.Text = "Rounds";
             // 
+            // AimPlayerBtn
+            // 
+            AimPlayerBtn.Location = new Point(12, 225);
+            AimPlayerBtn.Name = "AimPlayerBtn";
+            AimPlayerBtn.Size = new Size(112, 34);
+            AimPlayerBtn.TabIndex = 8;
+            AimPlayerBtn.Text = "Self";
+            AimPlayerBtn.UseVisualStyleBackColor = true;
+            AimPlayerBtn.Click += AimPlayerBtn_Click;
+            // 
+            // AimAiBtn
+            // 
+            AimAiBtn.Location = new Point(141, 225);
+            AimAiBtn.Name = "AimAiBtn";
+            AimAiBtn.Size = new Size(112, 34);
+            AimAiBtn.TabIndex = 9;
+            AimAiBtn.Text = "Opponent";
+            AimAiBtn.UseVisualStyleBackColor = true;
+            AimAiBtn.Click += AimAiBtn_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(12, 184);
+            label3.Name = "label3";
+            label3.Size = new Size(125, 25);
+            label3.TabIndex = 10;
+            label3.Text = "Choose Target";
+            // 
             // MainGame
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1265, 635);
+            Controls.Add(label3);
+            Controls.Add(AimAiBtn);
+            Controls.Add(AimPlayerBtn);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(GSTLabel);
@@ -111,6 +146,7 @@
             Controls.Add(EventsBox);
             Name = "MainGame";
             Text = "Form1";
+            Load += MainGame_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -124,5 +160,8 @@
         private Label GSTLabel;
         private Label label1;
         private Label label2;
+        private Button AimPlayerBtn;
+        private Button AimAiBtn;
+        private Label label3;
     }
 }
