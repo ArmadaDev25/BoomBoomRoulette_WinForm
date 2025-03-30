@@ -80,25 +80,37 @@ namespace BoomBoomRoulette
                 if (isPlayerTarget == true)
                 {
                     EventsBox.Items.Add("You Take a Shotgun Blast");
-                    EventsBox.Items.Add("Lose 1 Health");
+                    EventsBox.Items.Add("You Lose 1 Health");
+                    playerHealth = playerHealth - 1;
                 }
                 // If the AI was selected as the target, then the AI takes damage
                 else
                 {
-                    EventsBox.Items.Add("Bang");
+                    EventsBox.Items.Add("Your Opponent Takes a Shotgun Blast");
+                    EventsBox.Items.Add("They Lose 1 Health");
+                    computerHealth = computerHealth - 1;
                 }
 
 
             }
             // Logic for if the ammo was a blank
-            if (ammoLoaded[0] == "Blank")
+            if (ammoLoaded[CurrentAmmoRound] == "Blank")
             {
                 EventsBox.Items.Add("Click");
 
             }
             // Incriments the current ammo round
             CurrentAmmoRound++;
+            // Updates the health player and Computer health UI after each shoot
+            updateHealthCounters();
 
+        }
+
+        void updateHealthCounters() {
+            lblPlayerHP.Text = playerHealth.ToString();
+            lblcomputerHP.Text = computerHealth.ToString();
+        
+        
         }
 
 
@@ -107,8 +119,20 @@ namespace BoomBoomRoulette
         {
             loadGun();
             showLoadedRounds();
-            
-        
+            // Converts the health input text into an in
+            int Health = Convert.ToInt32(hInput.Text);
+            playerHealth = Health;
+            computerHealth = Health;
+            // Updates the Player and Computer Health UI elements
+            updateHealthCounters();
+
+
+
+
+
+
+
+
         }
 
 
@@ -148,6 +172,7 @@ namespace BoomBoomRoulette
                 MessageBox.Show(ex.Message);
 
             }
+            updateHealthCounters();
 
             
         }

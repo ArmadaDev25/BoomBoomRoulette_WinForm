@@ -30,8 +30,8 @@
         {
             EventsBox = new ListBox();
             StartRoundBtn = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            hInput = new TextBox();
+            rInput = new TextBox();
             GSTLabel = new Label();
             label1 = new Label();
             label2 = new Label();
@@ -41,15 +41,19 @@
             fireBtn = new Button();
             lblPName = new Label();
             lblPlayerNameOutput = new Label();
+            lblPlayerHP = new Label();
+            lblcomputerHP = new Label();
+            label6 = new Label();
+            label7 = new Label();
             SuspendLayout();
             // 
             // EventsBox
             // 
             EventsBox.FormattingEnabled = true;
             EventsBox.ItemHeight = 25;
-            EventsBox.Location = new Point(791, 112);
+            EventsBox.Location = new Point(791, 162);
             EventsBox.Name = "EventsBox";
-            EventsBox.Size = new Size(462, 504);
+            EventsBox.Size = new Size(462, 454);
             EventsBox.TabIndex = 0;
             // 
             // StartRoundBtn
@@ -62,19 +66,19 @@
             StartRoundBtn.UseVisualStyleBackColor = true;
             StartRoundBtn.Click += StartRoundBtn_Click;
             // 
-            // textBox1
+            // hInput
             // 
-            textBox1.Location = new Point(409, 59);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 31);
-            textBox1.TabIndex = 2;
+            hInput.Location = new Point(409, 59);
+            hInput.Name = "hInput";
+            hInput.Size = new Size(150, 31);
+            hInput.TabIndex = 2;
             // 
-            // textBox2
+            // rInput
             // 
-            textBox2.Location = new Point(103, 59);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 31);
-            textBox2.TabIndex = 3;
+            rInput.Location = new Point(103, 59);
+            rInput.Name = "rInput";
+            rInput.Size = new Size(150, 31);
+            rInput.TabIndex = 3;
             // 
             // GSTLabel
             // 
@@ -150,7 +154,6 @@
             lblPName.Size = new Size(115, 25);
             lblPName.TabIndex = 12;
             lblPName.Text = "Player Name:";
-            
             // 
             // lblPlayerNameOutput
             // 
@@ -161,11 +164,51 @@
             lblPlayerNameOutput.TabIndex = 13;
             lblPlayerNameOutput.Text = "label4";
             // 
+            // lblPlayerHP
+            // 
+            lblPlayerHP.AutoSize = true;
+            lblPlayerHP.Location = new Point(912, 65);
+            lblPlayerHP.Name = "lblPlayerHP";
+            lblPlayerHP.Size = new Size(59, 25);
+            lblPlayerHP.TabIndex = 14;
+            lblPlayerHP.Text = "label4";
+            // 
+            // lblcomputerHP
+            // 
+            lblcomputerHP.AutoSize = true;
+            lblcomputerHP.Location = new Point(912, 90);
+            lblcomputerHP.Name = "lblcomputerHP";
+            lblcomputerHP.Size = new Size(59, 25);
+            lblcomputerHP.TabIndex = 15;
+            lblcomputerHP.Text = "label5";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(791, 90);
+            label6.Name = "label6";
+            label6.Size = new Size(120, 25);
+            label6.TabIndex = 16;
+            label6.Text = "Computer HP";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(791, 65);
+            label7.Name = "label7";
+            label7.Size = new Size(87, 25);
+            label7.TabIndex = 17;
+            label7.Text = "Player HP";
+            // 
             // MainGame
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1265, 635);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(lblcomputerHP);
+            Controls.Add(lblPlayerHP);
             Controls.Add(lblPlayerNameOutput);
             Controls.Add(lblPName);
             Controls.Add(fireBtn);
@@ -175,8 +218,8 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(GSTLabel);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(rInput);
+            Controls.Add(hInput);
             Controls.Add(StartRoundBtn);
             Controls.Add(EventsBox);
             Name = "MainGame";
@@ -190,8 +233,8 @@
 
         private ListBox EventsBox;
         private Button StartRoundBtn;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox hInput;
+        private TextBox rInput;
         private Label GSTLabel;
         private Label label1;
         private Label label2;
@@ -201,5 +244,9 @@
         private Button fireBtn;
         private Label lblPName;
         private Label lblPlayerNameOutput;
+        private Label lblPlayerHP;
+        private Label lblcomputerHP;
+        private Label label6;
+        private Label label7;
     }
 }
