@@ -39,13 +39,15 @@
             AimAiBtn = new Button();
             label3 = new Label();
             fireBtn = new Button();
+            lblPName = new Label();
+            lblPlayerNameOutput = new Label();
             SuspendLayout();
             // 
             // EventsBox
             // 
             EventsBox.FormattingEnabled = true;
             EventsBox.ItemHeight = 25;
-            EventsBox.Location = new Point(786, 69);
+            EventsBox.Location = new Point(791, 112);
             EventsBox.Name = "EventsBox";
             EventsBox.Size = new Size(462, 504);
             EventsBox.TabIndex = 0;
@@ -140,11 +142,32 @@
             fireBtn.UseVisualStyleBackColor = true;
             fireBtn.Click += fireBtn_Click;
             // 
+            // lblPName
+            // 
+            lblPName.AutoSize = true;
+            lblPName.Location = new Point(791, 32);
+            lblPName.Name = "lblPName";
+            lblPName.Size = new Size(115, 25);
+            lblPName.TabIndex = 12;
+            lblPName.Text = "Player Name:";
+            
+            // 
+            // lblPlayerNameOutput
+            // 
+            lblPlayerNameOutput.AutoSize = true;
+            lblPlayerNameOutput.Location = new Point(912, 32);
+            lblPlayerNameOutput.Name = "lblPlayerNameOutput";
+            lblPlayerNameOutput.Size = new Size(59, 25);
+            lblPlayerNameOutput.TabIndex = 13;
+            lblPlayerNameOutput.Text = "label4";
+            // 
             // MainGame
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1265, 635);
+            Controls.Add(lblPlayerNameOutput);
+            Controls.Add(lblPName);
             Controls.Add(fireBtn);
             Controls.Add(label3);
             Controls.Add(AimAiBtn);
@@ -158,6 +181,7 @@
             Controls.Add(EventsBox);
             Name = "MainGame";
             Text = "Form1";
+            Load += MainGame_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -175,5 +199,7 @@
         private Button AimAiBtn;
         private Label label3;
         private Button fireBtn;
+        private Label lblPName;
+        private Label lblPlayerNameOutput;
     }
 }

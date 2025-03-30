@@ -16,6 +16,8 @@ namespace BoomBoomRoulette
         // bool that store whether or not the player is the target
         // Only 2 possible choices to the target, one of which is the player. The other target is not the player. 
         bool isPlayerTarget = false;
+        //Specify The Name of the file
+        private string fileName = "saveFile.txt";
         // function that Generates a random number to be used throghtout the application
         int generateRandomNumber(int ranMax)
         {
@@ -75,7 +77,7 @@ namespace BoomBoomRoulette
                     EventsBox.Items.Add("Lose 1 Health");
                 }
                 // If the AI was selected as the target, then the AI takes damage
-                else 
+                else
                 {
                     EventsBox.Items.Add("Bang");
                 }
@@ -117,7 +119,15 @@ namespace BoomBoomRoulette
         private void fireBtn_Click(object sender, EventArgs e)
         {
             fireGun();
-               
+
         }
+
+        private void MainGame_Load(object sender, EventArgs e)
+        {
+            // Changes the text of the label to the text within the file
+            lblPlayerNameOutput.Text = File.ReadAllText(fileName);
+        }
+
+   
     }
 }
