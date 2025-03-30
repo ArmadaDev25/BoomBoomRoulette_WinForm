@@ -99,6 +99,9 @@ namespace BoomBoomRoulette
         {
             loadGun();
             showLoadedRounds();
+            // Changes the text of the label to the text within the file
+            lblPlayerNameOutput.Text = File.ReadAllText(fileName);
+        
         }
 
 

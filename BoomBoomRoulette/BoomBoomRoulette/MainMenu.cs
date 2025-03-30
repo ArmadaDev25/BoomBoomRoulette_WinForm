@@ -21,15 +21,16 @@ namespace BoomBoomRoulette
 
         private void StartGameP1_Click(object sender, EventArgs e)
         {
+            // Writes the users name to a file
+            writeNameToFile();
+
             // Create an instance of the MainGame form so it can be opened
             MainGame MainG = new MainGame();
             // Open the MainGame form
             MainG.Show();
             // Hides the main menu form
             this.Hide();
-            // Writes the users name to a file
-            writeNameToFile();
-
+            
 
         }
         // Function that writes the Players name to a file
