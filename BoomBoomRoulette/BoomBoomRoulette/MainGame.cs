@@ -72,6 +72,7 @@ namespace BoomBoomRoulette
         {
             // If statements to check whether or not the Round was a "live" or a "blank"
             // Logic for if the ammo was live
+            // If the CurrentAmmoRound index within the ammoLoaded is considered "live" either the player or the computer takes damage
             if (ammoLoaded[CurrentAmmoRound] == "Live")
             {
                 EventsBox.Items.Add("Bang");
@@ -94,6 +95,7 @@ namespace BoomBoomRoulette
 
             }
             // Logic for if the ammo was a blank
+            // if the round was a Blank, nothing happens besides a message being added to the EventsBox
             if (ammoLoaded[CurrentAmmoRound] == "Blank")
             {
                 EventsBox.Items.Add("Click");
@@ -106,6 +108,7 @@ namespace BoomBoomRoulette
 
         }
 
+        // Function that updates the health UI
         void updateHealthCounters() {
             lblPlayerHP.Text = playerHealth.ToString();
             lblcomputerHP.Text = computerHealth.ToString();
@@ -117,15 +120,27 @@ namespace BoomBoomRoulette
 
         private void StartRoundBtn_Click(object sender, EventArgs e)
         {
-            loadGun();
-            showLoadedRounds();
-            // Converts the health input text into an in
-            double Health = Convert.ToDouble(hInput.Text);
-            playerHealth = Health;
-            computerHealth = Health;
-            // Updates the Player and Computer Health UI elements
-            updateHealthCounters();
-
+            // Stores the outputed double
+            double dhInput;
+            // Checks to make sure the user has a valid input
+            // Attempts to parse the input into a double 
+            if (double.TryParse(hInput.Text, out dhInput))
+            {
+                // Runs the 2 functions that are needed to start the game
+                loadGun();
+                showLoadedRounds();
+                // Sets the player and computer health to the value inputted by the user.
+                playerHealth = dhInput;
+                computerHealth = dhInput;
+                // Updates the Player and Computer Health UI elements
+                updateHealthCounters();
+            }
+            // If the user injput is not valid, Show a message box
+            else {
+                MessageBox.Show("Please Enter a Number");
+            
+            }
+            
 
 
 
@@ -174,6 +189,7 @@ namespace BoomBoomRoulette
                 MessageBox.Show(ex.Message);
 
             }
+            // UI elements for health are set to zero on MainGame load
             updateHealthCounters();
             CurrentTargetlbl.Text = "Opponent";
 
