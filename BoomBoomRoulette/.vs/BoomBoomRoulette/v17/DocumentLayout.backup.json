@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{83F63818-BC1D-4E7D-BB17-7AF2F60DF62D}|BoomBoomRoulette\\BoomBoomRoulette.csproj|solutionrelative:boomboomroulette\\maingame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83F63818-BC1D-4E7D-BB17-7AF2F60DF62D}|BoomBoomRoulette\\BoomBoomRoulette.csproj|d:\\projects\\boomboomroulette_winform\\boomboomroulette\\boomboomroulette\\maingame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{83F63818-BC1D-4E7D-BB17-7AF2F60DF62D}|BoomBoomRoulette\\BoomBoomRoulette.csproj|solutionrelative:boomboomroulette\\maingame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83F63818-BC1D-4E7D-BB17-7AF2F60DF62D}|BoomBoomRoulette\\BoomBoomRoulette.csproj|D:\\Projects\\BoomBoomRoulette_WinForm\\BoomBoomRoulette\\boomboomroulette\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{83F63818-BC1D-4E7D-BB17-7AF2F60DF62D}|BoomBoomRoulette\\BoomBoomRoulette.csproj|solutionrelative:boomboomroulette\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{83F63818-BC1D-4E7D-BB17-7AF2F60DF62D}|BoomBoomRoulette\\BoomBoomRoulette.csproj|d:\\projects\\boomboomroulette_winform\\boomboomroulette\\boomboomroulette\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83F63818-BC1D-4E7D-BB17-7AF2F60DF62D}|BoomBoomRoulette\\BoomBoomRoulette.csproj|solutionrelative:boomboomroulette\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83F63818-BC1D-4E7D-BB17-7AF2F60DF62D}|BoomBoomRoulette\\BoomBoomRoulette.csproj|d:\\projects\\boomboomroulette_winform\\boomboomroulette\\boomboomroulette\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83F63818-BC1D-4E7D-BB17-7AF2F60DF62D}|BoomBoomRoulette\\BoomBoomRoulette.csproj|solutionrelative:boomboomroulette\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83F63818-BC1D-4E7D-BB17-7AF2F60DF62D}|BoomBoomRoulette\\BoomBoomRoulette.csproj|d:\\projects\\boomboomroulette_winform\\boomboomroulette\\boomboomroulette\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83F63818-BC1D-4E7D-BB17-7AF2F60DF62D}|BoomBoomRoulette\\BoomBoomRoulette.csproj|solutionrelative:boomboomroulette\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83F63818-BC1D-4E7D-BB17-7AF2F60DF62D}|BoomBoomRoulette\\BoomBoomRoulette.csproj|d:\\projects\\boomboomroulette_winform\\boomboomroulette\\boomboomroulette\\maingame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83F63818-BC1D-4E7D-BB17-7AF2F60DF62D}|BoomBoomRoulette\\BoomBoomRoulette.csproj|solutionrelative:boomboomroulette\\maingame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83F63818-BC1D-4E7D-BB17-7AF2F60DF62D}|BoomBoomRoulette\\BoomBoomRoulette.csproj|D:\\Projects\\BoomBoomRoulette_WinForm\\BoomBoomRoulette\\boomboomroulette\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83F63818-BC1D-4E7D-BB17-7AF2F60DF62D}|BoomBoomRoulette\\BoomBoomRoulette.csproj|solutionrelative:boomboomroulette\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83F63818-BC1D-4E7D-BB17-7AF2F60DF62D}|BoomBoomRoulette\\BoomBoomRoulette.csproj|d:\\projects\\boomboomroulette_winform\\boomboomroulette\\boomboomroulette\\maingame.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,25 +42,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "D:\\Projects\\BoomBoomRoulette_WinForm\\BoomBoomRoulette\\BoomBoomRoulette\\MainMenu.cs",
               "RelativeDocumentMoniker": "BoomBoomRoulette\\MainMenu.cs",
               "ToolTip": "D:\\Projects\\BoomBoomRoulette_WinForm\\BoomBoomRoulette\\BoomBoomRoulette\\MainMenu.cs",
               "RelativeToolTip": "BoomBoomRoulette\\MainMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAACMAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T21:44:26.963Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainGame.cs [Design]",
               "DocumentMoniker": "D:\\Projects\\BoomBoomRoulette_WinForm\\BoomBoomRoulette\\BoomBoomRoulette\\MainGame.cs",
               "RelativeDocumentMoniker": "BoomBoomRoulette\\MainGame.cs",
-              "ToolTip": "D:\\Projects\\BoomBoomRoulette_WinForm\\BoomBoomRoulette\\BoomBoomRoulette\\MainGame.cs [Design]",
-              "RelativeToolTip": "BoomBoomRoulette\\MainGame.cs [Design]",
+              "ToolTip": "D:\\Projects\\BoomBoomRoulette_WinForm\\BoomBoomRoulette\\BoomBoomRoulette\\MainGame.cs [Design]*",
+              "RelativeToolTip": "BoomBoomRoulette\\MainGame.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T19:38:50.39Z",
               "EditorCaption": " [Design]"
@@ -80,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Projects\\BoomBoomRoulette_WinForm\\BoomBoomRoulette\\BoomBoomRoulette\\Program.cs",
               "RelativeDocumentMoniker": "BoomBoomRoulette\\Program.cs",
@@ -88,11 +88,12 @@
               "RelativeToolTip": "BoomBoomRoulette\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T19:51:22.575Z"
+              "WhenOpened": "2025-03-25T19:51:22.575Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MainMenu.cs [Design]",
               "DocumentMoniker": "D:\\Projects\\BoomBoomRoulette_WinForm\\BoomBoomRoulette\\BoomBoomRoulette\\MainMenu.cs",
               "RelativeDocumentMoniker": "BoomBoomRoulette\\MainMenu.cs",
@@ -113,9 +114,9 @@
               "Title": "MainGame.cs",
               "DocumentMoniker": "D:\\Projects\\BoomBoomRoulette_WinForm\\BoomBoomRoulette\\BoomBoomRoulette\\MainGame.cs",
               "RelativeDocumentMoniker": "BoomBoomRoulette\\MainGame.cs",
-              "ToolTip": "D:\\Projects\\BoomBoomRoulette_WinForm\\BoomBoomRoulette\\BoomBoomRoulette\\MainGame.cs",
-              "RelativeToolTip": "BoomBoomRoulette\\MainGame.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAAAGcAAABQAAAAAAAAAA==",
+              "ToolTip": "D:\\Projects\\BoomBoomRoulette_WinForm\\BoomBoomRoulette\\BoomBoomRoulette\\MainGame.cs*",
+              "RelativeToolTip": "BoomBoomRoulette\\MainGame.cs*",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAHgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T19:50:21.224Z",
               "EditorCaption": ""

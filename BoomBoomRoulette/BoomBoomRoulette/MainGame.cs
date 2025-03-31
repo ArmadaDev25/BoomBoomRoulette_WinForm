@@ -12,8 +12,8 @@ namespace BoomBoomRoulette
         // Variables
         // Array that stores what "ammo in loaded in the gun and in what order"
         string[] ammoLoaded = [];
-        int playerHealth = 0;
-        int computerHealth = 0;
+        double playerHealth = 0;
+        double computerHealth = 0;
         int RoundsToLoad = 5;
         // bool that store whether or not the player is the target
         // Only 2 possible choices to the target, one of which is the player. The other target is not the player. 
@@ -120,7 +120,7 @@ namespace BoomBoomRoulette
             loadGun();
             showLoadedRounds();
             // Converts the health input text into an in
-            int Health = Convert.ToInt32(hInput.Text);
+            double Health = Convert.ToDouble(hInput.Text);
             playerHealth = Health;
             computerHealth = Health;
             // Updates the Player and Computer Health UI elements
@@ -141,12 +141,14 @@ namespace BoomBoomRoulette
         private void AimPlayerBtn_Click(object sender, EventArgs e)
         {
             isPlayerTarget = true;
+            CurrentTargetlbl.Text = "Self";
         }
 
         // Player Clicks this button to set the target to the AI
         private void AimAiBtn_Click(object sender, EventArgs e)
         {
             isPlayerTarget = false;
+            CurrentTargetlbl.Text = "Opponent";
         }
 
         // logic that happens when the player pushes the fire button
@@ -173,8 +175,9 @@ namespace BoomBoomRoulette
 
             }
             updateHealthCounters();
+            CurrentTargetlbl.Text = "Opponent";
 
-            
+
         }
 
    

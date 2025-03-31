@@ -31,10 +31,8 @@
             EventsBox = new ListBox();
             StartRoundBtn = new Button();
             hInput = new TextBox();
-            rInput = new TextBox();
             GSTLabel = new Label();
             label1 = new Label();
-            label2 = new Label();
             AimPlayerBtn = new Button();
             AimAiBtn = new Button();
             label3 = new Label();
@@ -45,6 +43,8 @@
             lblcomputerHP = new Label();
             label6 = new Label();
             label7 = new Label();
+            label2 = new Label();
+            CurrentTargetlbl = new Label();
             SuspendLayout();
             // 
             // EventsBox
@@ -68,17 +68,10 @@
             // 
             // hInput
             // 
-            hInput.Location = new Point(409, 59);
+            hInput.Location = new Point(162, 62);
             hInput.Name = "hInput";
             hInput.Size = new Size(150, 31);
             hInput.TabIndex = 2;
-            // 
-            // rInput
-            // 
-            rInput.Location = new Point(103, 59);
-            rInput.Name = "rInput";
-            rInput.Size = new Size(150, 31);
-            rInput.TabIndex = 3;
             // 
             // GSTLabel
             // 
@@ -92,24 +85,15 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(259, 62);
+            label1.Location = new Point(12, 65);
             label1.Name = "label1";
             label1.Size = new Size(144, 25);
             label1.TabIndex = 5;
             label1.Text = "Health Per Player";
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(25, 62);
-            label2.Name = "label2";
-            label2.Size = new Size(72, 25);
-            label2.TabIndex = 6;
-            label2.Text = "Rounds";
-            // 
             // AimPlayerBtn
             // 
-            AimPlayerBtn.Location = new Point(12, 225);
+            AimPlayerBtn.Location = new Point(12, 268);
             AimPlayerBtn.Name = "AimPlayerBtn";
             AimPlayerBtn.Size = new Size(112, 34);
             AimPlayerBtn.TabIndex = 8;
@@ -119,7 +103,7 @@
             // 
             // AimAiBtn
             // 
-            AimAiBtn.Location = new Point(141, 225);
+            AimAiBtn.Location = new Point(141, 268);
             AimAiBtn.Name = "AimAiBtn";
             AimAiBtn.Size = new Size(112, 34);
             AimAiBtn.TabIndex = 9;
@@ -130,15 +114,16 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 184);
+            label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(12, 182);
             label3.Name = "label3";
-            label3.Size = new Size(125, 25);
+            label3.Size = new Size(170, 32);
             label3.TabIndex = 10;
             label3.Text = "Choose Target";
             // 
             // fireBtn
             // 
-            fireBtn.Location = new Point(12, 284);
+            fireBtn.Location = new Point(12, 327);
             fireBtn.Name = "fireBtn";
             fireBtn.Size = new Size(241, 70);
             fireBtn.TabIndex = 11;
@@ -200,11 +185,31 @@
             label7.TabIndex = 17;
             label7.Text = "Player HP";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(12, 225);
+            label2.Name = "label2";
+            label2.Size = new Size(123, 25);
+            label2.TabIndex = 18;
+            label2.Text = "Current Target";
+            // 
+            // CurrentTargetlbl
+            // 
+            CurrentTargetlbl.AutoSize = true;
+            CurrentTargetlbl.Location = new Point(141, 225);
+            CurrentTargetlbl.Name = "CurrentTargetlbl";
+            CurrentTargetlbl.Size = new Size(59, 25);
+            CurrentTargetlbl.TabIndex = 19;
+            CurrentTargetlbl.Text = "label4";
+            // 
             // MainGame
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1265, 635);
+            Controls.Add(CurrentTargetlbl);
+            Controls.Add(label2);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(lblcomputerHP);
@@ -215,10 +220,8 @@
             Controls.Add(label3);
             Controls.Add(AimAiBtn);
             Controls.Add(AimPlayerBtn);
-            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(GSTLabel);
-            Controls.Add(rInput);
             Controls.Add(hInput);
             Controls.Add(StartRoundBtn);
             Controls.Add(EventsBox);
@@ -234,10 +237,8 @@
         private ListBox EventsBox;
         private Button StartRoundBtn;
         private TextBox hInput;
-        private TextBox rInput;
         private Label GSTLabel;
         private Label label1;
-        private Label label2;
         private Button AimPlayerBtn;
         private Button AimAiBtn;
         private Label label3;
@@ -248,5 +249,7 @@
         private Label lblcomputerHP;
         private Label label6;
         private Label label7;
+        private Label label2;
+        private Label CurrentTargetlbl;
     }
 }
