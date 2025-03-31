@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace BoomBoomRoulette
 {
@@ -169,7 +170,17 @@ namespace BoomBoomRoulette
         // logic that happens when the player pushes the fire button
         private void fireBtn_Click(object sender, EventArgs e)
         {
-            fireGun();
+            // Checks to make sure the index contained within CurrentAmmoRound is not outside the AmmoLoaded array
+            if (CurrentAmmoRound >= ammoLoaded.Length - 1)
+            {
+                MessageBox.Show("Gun is Not Loaded");
+            }
+            // If index contained within the CurrentAmmoRound variable is within the AmmoLoaded array, the fireGun() function will run
+            else 
+            {
+                fireGun();
+            }
+                
 
         }
 
