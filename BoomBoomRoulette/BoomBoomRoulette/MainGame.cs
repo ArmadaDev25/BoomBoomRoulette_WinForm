@@ -23,6 +23,10 @@ namespace BoomBoomRoulette
         private string fileName = "saveFile.txt";
         // Stores the current index of the next "shell" to be fired in the AmmoLoaded array
         int CurrentAmmoRound = 0;
+
+        // Counters that store how many rounds of each kind their are
+        int liveRounds = 0;
+        int blankRounds = 0;
         
         // function that Generates a random number to be used throghtout the application
         int generateRandomNumber(int ranMax)
@@ -37,6 +41,7 @@ namespace BoomBoomRoulette
         // Function that will "load the gun with a random assortment of shells that are either live or not live"
         void loadGun()
         {
+            
             // Loop that will load the gun by adding items to the ammoLoaded array
             for (int i = 0; i < RoundsToLoad; i++)
             {
@@ -46,10 +51,12 @@ namespace BoomBoomRoulette
                 if (roundToLoad == 0)
                 {
                     ammoLoaded = ammoLoaded.Append("Live").ToArray();
+                    liveRounds++;
                 }
                 else
                 {
                     ammoLoaded = ammoLoaded.Append("Blank").ToArray();
+                    blankRounds++;
 
                 }
 
@@ -60,6 +67,10 @@ namespace BoomBoomRoulette
         {
             // Adds the "Rounds Loaded" string to the textbox to denote to the user that these are the rounds loaded into the gun
             EventsBox.Items.Add("Rounds Loaded");
+            EventsBox.Items.Add(liveRounds.ToString());
+            EventsBox.Items.Add(blankRounds.ToString());
+
+            // Used For DEBUGING
             // For loop that loops through each of the indexes within the ammoLoaded Array
             for (int i = 0; i < ammoLoaded.Length; i++)
             {
