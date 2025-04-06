@@ -4,7 +4,7 @@
 A roulette style Windows Forms app developed in C#. 
 
 ## Features
-- For loop that makes uses a function to generates a number either a 1 or a 0.  
+- Function that generates and array of data that contains whether a round is considered "Live or Not". It this by using a for loop that generates a random number. Then based on the random adds a string to the array. This string can either be  
 
 ## YouTube Video Link
 https://youtu.be/pcdj-lBgnJM
