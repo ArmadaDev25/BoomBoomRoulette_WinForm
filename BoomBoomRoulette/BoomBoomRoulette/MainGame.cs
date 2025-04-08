@@ -25,8 +25,8 @@ namespace BoomBoomRoulette
         int CurrentAmmoRound = 0;
 
         // Counters that store how many rounds of each kind their are
-        int liveRounds = 0;
-        int blankRounds = 0;
+        int liveDarts = 0;
+        int blankDarts = 0;
         
         // function that Generates a random number to be used throghtout the application
         int generateRandomNumber(int ranMax)
@@ -39,7 +39,7 @@ namespace BoomBoomRoulette
         }
 
         // Function that will "load the gun with a random assortment of shells that are either live or not live"
-        void loadGun()
+        void loadDarts()
         {
             
             // Loop that will load the gun by adding items to the ammoLoaded array
@@ -51,24 +51,24 @@ namespace BoomBoomRoulette
                 if (roundToLoad == 0)
                 {
                     ammoLoaded = ammoLoaded.Append("Live").ToArray();
-                    liveRounds++;
+                    liveDarts++;
                 }
                 else
                 {
                     ammoLoaded = ammoLoaded.Append("Blank").ToArray();
-                    blankRounds++;
+                    blankDarts++;
 
                 }
 
             }
         }
         // Displays the rounds loaded to the user
-        void showLoadedRounds()
+        void showLoadedDarts()
         {
             // Adds the "Rounds Loaded" string to the textbox to denote to the user that these are the rounds loaded into the gun
             EventsBox.Items.Add("Rounds Loaded");
-            EventsBox.Items.Add(liveRounds.ToString());
-            EventsBox.Items.Add(blankRounds.ToString());
+            EventsBox.Items.Add(liveDarts.ToString());
+            EventsBox.Items.Add(blankDarts.ToString());
 
             // Used For DEBUGING
             // For loop that loops through each of the indexes within the ammoLoaded Array
@@ -80,7 +80,7 @@ namespace BoomBoomRoulette
         }
 
         // Logic that happens when the player choses to fire the gun  
-        void fireGun()
+        void fireNerfGun()
         {
             // If statements to check whether or not the Round was a "live" or a "blank"
             // Logic for if the ammo was live
@@ -139,8 +139,8 @@ namespace BoomBoomRoulette
             if (double.TryParse(hInput.Text, out dhInput))
             {
                 // Runs the 2 functions that are needed to start the game
-                loadGun();
-                showLoadedRounds();
+                loadDarts();
+                showLoadedDarts();
                 // Sets the player and computer health to the value inputted by the user.
                 playerHealth = dhInput;
                 computerHealth = dhInput;
@@ -189,7 +189,7 @@ namespace BoomBoomRoulette
             // If index contained within the CurrentAmmoRound variable is within the AmmoLoaded array, the fireGun() function will run
             else 
             {
-                fireGun();
+                fireNerfGun();
             }
                 
 
