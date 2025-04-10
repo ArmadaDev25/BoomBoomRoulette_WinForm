@@ -1,7 +1,7 @@
 # Boom Boom Roulette
 
 ## Overview
-A roulette style Windows Forms app developed in C#. This app simulates the mechanics of a game of russian roulette but instead it uses a nerf gun. The app does this by "loading" a nerf gun with either "live" or "blank" darts. The user can point the nerf gun at either themselves or someone else. The user then fires the dart and either there will be a "Bang" meaning it was a "live" dart, or there will be a "Click" meaning that it was a "Blank" dart.  
+A roulette style Windows Forms app developed in C#. This app simulates the mechanics of a game of russian roulette but instead it uses a nerf gun. The app does this by "loading" a nerf gun with either "live" or "blank" darts. The user can point the nerf gun at either themselves or their opponent, that being the computer. The user then fires the dart and either there will be a "Bang" meaning it was a "live" dart, or there will be a "Click" meaning that it was a "Blank" dart. Each time there is a bank, the person whom the nerf gun is pointed at loses health. When either the player or the computer reach 0 health, a Victory condition is called, and whomever has health remaining is declared the winner.
 
 ## User Experience
 When the user starts the application, they are first presented with a Main Menu that allows them to enter there name, and start the simulation. 
