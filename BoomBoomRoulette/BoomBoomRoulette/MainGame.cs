@@ -190,6 +190,15 @@ namespace BoomBoomRoulette
             else 
             {
                 fireNerfGun();
+                // Checks to see if there has been a Victory.
+                // A Victory happens when either the player or the Computer reaches 0 health
+                // Sees if the either the player or the AI is at 0 health
+                if (playerHealth >= 0) {
+                    EventsBox.Items.Add("Player has Lost");
+                }
+                if (computerHealth >= 0) {
+                    EventsBox.Items.Add("Player has Won");
+                }
             }
                 
 
