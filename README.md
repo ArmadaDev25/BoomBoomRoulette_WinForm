@@ -6,6 +6,9 @@ A roulette style Windows Forms app developed in C#. This app simulates the mecha
 ## User Experience
 When the user starts the application, they are first presented with a Main Menu that allows them to enter there name, and start the simulation. Upon starting the simulation they are taken to a screen that shows the UI needed for the simulation. This consists of an events log, the health counters for both the player and the computer, and a text label that shows who the Nerf gun is pointed at. 
 
+### Running the Simulation
+In order to start the simulation, the user must input how much health the player's will have. The players being the user, and the computer. Users must imput an integer. 
+
 ## Features
 - Function that generates and array of data that contains whether a round is considered "Live or Not". It this by using a for loop that generates a random number. Then based on the random adds a string to the array. This string can either be "Live" or "Blank".
 - The ability to save user data to a file then refrence it later.
