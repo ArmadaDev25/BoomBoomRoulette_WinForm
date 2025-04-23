@@ -80,7 +80,7 @@
             Controls.Add(PlayerNameEntry);
             Controls.Add(StartGameP1);
             Name = "MainMenu";
-            Text = "MainMenu";
+            Text = "Boom Boom Roulette ";
             ResumeLayout(false);
             PerformLayout();
         }

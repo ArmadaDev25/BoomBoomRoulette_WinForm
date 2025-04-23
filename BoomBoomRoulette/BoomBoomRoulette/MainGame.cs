@@ -27,7 +27,7 @@ namespace BoomBoomRoulette
         // Counters that store how many rounds of each kind their are
         int liveDarts = 0;
         int blankDarts = 0;
-        
+
         // function that Generates a random number to be used throghtout the application
         int generateRandomNumber(int ranMax)
         {
@@ -41,7 +41,7 @@ namespace BoomBoomRoulette
         // Function that will "load the gun with a random assortment of shells that are either live or not live"
         void loadDarts()
         {
-            
+
             // Loop that will load the gun by adding items to the ammoLoaded array
             for (int i = 0; i < RoundsToLoad; i++)
             {
@@ -121,11 +121,12 @@ namespace BoomBoomRoulette
         }
 
         // Function that updates the health UI
-        void updateHealthCounters() {
+        void updateHealthCounters()
+        {
             lblPlayerHP.Text = playerHealth.ToString();
             lblcomputerHP.Text = computerHealth.ToString();
-        
-        
+
+
         }
 
 
@@ -148,11 +149,12 @@ namespace BoomBoomRoulette
                 updateHealthCounters();
             }
             // If the user injput is not valid, Show a message box
-            else {
+            else
+            {
                 MessageBox.Show("Please Enter a Number");
-            
+
             }
-            
+
 
 
 
@@ -187,20 +189,22 @@ namespace BoomBoomRoulette
                 MessageBox.Show("Gun is Not Loaded");
             }
             // If index contained within the CurrentAmmoRound variable is within the AmmoLoaded array, the fireGun() function will run
-            else 
+            else
             {
                 fireNerfGun();
                 // Checks to see if there has been a Victory.
                 // A Victory happens when either the player or the Computer reaches 0 health
                 // Sees if the either the player or the AI is at 0 health
-                if (playerHealth >= 0) {
+                if (playerHealth >= 0)
+                {
                     EventsBox.Items.Add("Player has Lost");
                 }
-                if (computerHealth >= 0) {
+                if (computerHealth >= 0)
+                {
                     EventsBox.Items.Add("Player has Won");
                 }
             }
-                
+
 
         }
 
@@ -209,7 +213,7 @@ namespace BoomBoomRoulette
         private void MainGame_Load(object sender, EventArgs e)
         {
             // Try/Catch Error handling to handle potential errors with the file read/write
-            try 
+            try
             {
                 // Changes the text of the label to the text within the file
                 lblPlayerNameOutput.Text = File.ReadAllText(fileName);
@@ -227,6 +231,5 @@ namespace BoomBoomRoulette
 
         }
 
-   
     }
 }

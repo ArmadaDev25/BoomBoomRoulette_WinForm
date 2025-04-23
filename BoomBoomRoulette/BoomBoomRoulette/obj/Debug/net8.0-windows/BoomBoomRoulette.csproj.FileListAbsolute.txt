@@ -16,3 +16,4 @@ D:\Projects\BoomBoomRoulette_WinForm\BoomBoomRoulette\BoomBoomRoulette\obj\Debug
 D:\Projects\BoomBoomRoulette_WinForm\BoomBoomRoulette\BoomBoomRoulette\obj\Debug\net8.0-windows\BoomBoomRoulette.pdb
 D:\Projects\BoomBoomRoulette_WinForm\BoomBoomRoulette\BoomBoomRoulette\obj\Debug\net8.0-windows\BoomBoomRoulette.genruntimeconfig.cache
 D:\Projects\BoomBoomRoulette_WinForm\BoomBoomRoulette\BoomBoomRoulette\obj\Debug\net8.0-windows\ref\BoomBoomRoulette.dll
+D:\Projects\BoomBoomRoulette_WinForm\BoomBoomRoulette\BoomBoomRoulette\obj\Debug\net8.0-windows\BoomBoomRoulette.Properties.Resources.resources
