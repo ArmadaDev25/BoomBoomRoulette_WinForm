@@ -40,7 +40,7 @@
             StartGameP1.Name = "StartGameP1";
             StartGameP1.Size = new Size(185, 34);
             StartGameP1.TabIndex = 0;
-            StartGameP1.Text = "Start Game P1";
+            StartGameP1.Text = "Start Simulation P1";
             StartGameP1.UseVisualStyleBackColor = true;
             StartGameP1.Click += StartGameP1_Click;
             // 
